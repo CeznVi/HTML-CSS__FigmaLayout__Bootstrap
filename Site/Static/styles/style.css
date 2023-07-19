@@ -1,4 +1,122 @@
+/* * Import fonts from GoogleFonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* * END Import fonts from GoogleFonts */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .sizeContainer{
     min-width: 360px;
     max-width: 1219px;
+}
+
+.mainColor{
+    color: #007765;
+}
+
+.bgMainColor{
+    background: #007765;
+}
+
+.headerRow{
+    align-items: center;
+    min-height: 84px;
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
+header{
+    min-width: 360px;
+}
+
+.imgHeaderLogo{
+    display: block;
+    width: 184px;
+    height: 45px;
+    margin: 0;
+}
+
+.HeaderLinkBlock{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: end;
+}
+
+header a{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+header p{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    /* font-size: 24px; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ! МЕДИА ЗАПРОСЫ */
+@media screen and (max-width: 992px) {
+    header a,
+    header p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imgHeaderLogo{
+        max-width: 80%;
+    }
+    
+
+    header a,
+    header p{
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .imgHeaderLogo{
+        margin: 0 auto;
+        max-width: 75%;
+        margin-bottom: 15px;
+    }
+    
+    .HeaderLinkBlock{
+        justify-content: center;
+    }
+    
+    header p{
+        display: none;
+    }
+
+    header a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    .HeaderLinkBlock{
+        flex-direction: column;
+    }
+
 }
