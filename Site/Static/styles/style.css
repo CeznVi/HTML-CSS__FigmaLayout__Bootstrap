@@ -29,13 +29,29 @@ body{
     background-color: #EEE;
 }
 
+.bgc-fff{
+    background-color: #fff;
+}
+
 .padingLR54{
     padding-left: 54px;
     padding-right: 54px;
 }
 
+.mt-56px{
+    margin-top: 56px;
+}
+
+.mb-82px{
+    margin-bottom: 82px;
+}
+
 .mb-32px{
     margin-bottom: 32px;
+}
+
+.mb-12px{
+    margin-bottom: 12px;
 }
 
 .pb-92px{
@@ -166,6 +182,69 @@ header p{
     margin-bottom: 0px;
 }
 
+.PPCLogo{
+    display: block;
+    width: 115px;
+    height: 115px;
+    margin: 0;
+}
+
+.TeamOneMember{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.TeamIcon{
+    width: 168px;
+    height: 168px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TeamMemberName{
+    color: #007765;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.JobTitle{
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icon01{
+    background-image: url('../images/team01.png');
+}
+
+.icon02{
+    background-image: url('../images/team02.png');
+}
+
+.icon03{
+    background-image: url('../images/team03.png');
+}
+
+.icon04{
+    background-image: url('../images/team04.png');
+}
+
+.icon05{
+    background-image: url('../images/team05.png');
+}
+
+.icon06{
+    background-image: url('../images/team02.png');
+}
+
 /* ! МЕДИА ЗАПРОСЫ */
 @media screen and (max-width: 1219px) {
     .headerImage{
@@ -202,7 +281,35 @@ header p{
         font-size: 18px;
     }
 
+    .PPCLogo{
+        height: 85px;
+        width: 85px;
+    }
 
+    .pb-92px{
+        padding-bottom: 50px;
+    }
+
+    .mt-56px{
+        margin-top: 0px;
+    }
+
+    .mb-82px{
+        margin-bottom: 12px;
+    }
+
+    .TeamIcon{
+        width: 140px;
+        height: 140px;
+    }
+
+    .TeamMemberName{
+        font-size: 18px;
+    }
+
+    .JobTitle p{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -232,7 +339,7 @@ header p{
     }
 
     .h2TextStyle{
-        font-size: 55px;
+        font-size: 40px;
     }
 
     .TheProblemBlock h2{
@@ -243,7 +350,7 @@ header p{
     .TheProblemBlock p,
     .TheProblemBlock b{
         margin-bottom: 12px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .pb-92px{
@@ -258,6 +365,23 @@ header p{
         font-size: 36px;
     }
 
+    .PPCLogo{
+        height: 60px;
+        width: 60px;
+    }
+
+    .TeamIcon{
+        width: 100px;
+        height: 100px;
+    }
+
+    .TeamMemberName{
+        font-size: 18px;
+    }
+
+    .JobTitle{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 419px) {
@@ -279,6 +403,24 @@ header p{
 
     .h3TextStyle{
         font-size: 30px;
+    }
+
+    .PPCLogo{
+        height: 50px;
+        width: 50px;
+    }
+
+    .TeamIcon{
+        width: 70px;
+        height: 70px;
+    }
+
+    .TeamMemberName{
+        font-size: 18px;
+    }
+
+    .JobTitle{
+        font-size: 16px;
     }
 
 }
