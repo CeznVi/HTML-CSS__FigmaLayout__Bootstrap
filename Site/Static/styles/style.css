@@ -34,6 +34,18 @@ body{
     padding-right: 54px;
 }
 
+.mb-32px{
+    margin-bottom: 32px;
+}
+
+.pb-92px{
+    padding-bottom: 92px;
+}
+
+.Font-wight700{
+    font-weight: 700;
+}
+
 .headerRow{
     align-items: center;
     min-height: 84px;
@@ -76,7 +88,6 @@ header p{
     color: #FFF;
     text-align: center;
     font-family: Roboto;
-    /* font-size: 24px; */
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -102,7 +113,7 @@ header p{
     line-height: normal;
 }
 
-.headerImageText{
+.ImageTextAbsolute{
     position: absolute;
     top: 0;
     left: 0;
@@ -126,12 +137,44 @@ header p{
     line-height: normal;
 }
 
+.pTypography{
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.HeroImage{
+    margin: 0 auto;
+    height: 483px;
+    background: url('../images/heroBIG.png'), lightgray 50% / cover no-repeat;    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.h3TextStyle{
+    max-width: 893px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0px;
+}
 
 /* ! МЕДИА ЗАПРОСЫ */
 @media screen and (max-width: 1219px) {
     .headerImage{
     background: url('../images/jumbotron.png'), lightgray 50%;  
     }
+    .HeroImage{
+        background: url('../images/hero.png'), lightgray 50%;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -142,6 +185,10 @@ header p{
 
     .headerImage{
         background-position: center center;  
+    }
+
+    .HeroImage{
+        background-position: center center;
     }
 }
 
@@ -179,8 +226,36 @@ header p{
     .headerImage{
         height: 350px;
     }
+
     .h1TextStyle{
         font-size: 55px;
+    }
+
+    .h2TextStyle{
+        font-size: 55px;
+    }
+
+    .TheProblemBlock h2{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .TheProblemBlock p,
+    .TheProblemBlock b{
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .pb-92px{
+        padding-bottom: 12px;
+    }
+
+    .HeroImage{
+        height: 300px;
+    }
+
+    .h3TextStyle{
+        font-size: 36px;
     }
 
 }
@@ -193,8 +268,17 @@ header p{
     .headerImage{
         height: 310px;
     }
+
     .h1TextStyle{
         font-size: 48px;
+    }
+
+    .HeroImage{
+        height: 240px;
+    }
+
+    .h3TextStyle{
+        font-size: 30px;
     }
 
 }
