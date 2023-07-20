@@ -25,6 +25,10 @@ body{
     background: #007765;
 }
 
+.bgc-333{
+    background: #333;
+}
+
 .bgc-eee{
     background-color: #EEE;
 }
@@ -221,6 +225,31 @@ header p{
     line-height: normal;
 }
 
+footer{
+    height: 176px;
+    min-width: 360px;
+}
+
+.footerBox{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText{
+    max-width: 540px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
 .icon01{
     background-image: url('../images/team01.png');
 }
@@ -381,6 +410,14 @@ header p{
 
     .JobTitle{
         font-size: 16px;
+    }
+
+    footer{
+        height: 80px;
+    }
+
+    .footerText{
+        font-size: 14px;
     }
 }
 
